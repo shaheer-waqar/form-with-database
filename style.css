@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 100%;
+    padding: 10px 30px;
+}
+.container .form-wrapper{
+    padding: 0 40px;
+}
+.container .form-wrapper .upper-div{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.container .form-wrapper .upper-div div {
+    width: 49%;
+}
+.container .form-wrapper .upper-div div .upper-input{
+    width: 100%;
+    height: 35px;
+}
+
+.container .form-wrapper .lower-div{
+    display: flex;
+    flex-direction: column ;
+    width: 100%;
+    row-gap: 10px;
+    margin:10px 0;
+
+
+}
+.container .form-wrapper .lower-div div {
+    width: 100%;   
+}
+.container .form-wrapper .lower-div div .lower-input{
+    width: 100%;
+    height: 35px;
+} 
+.upper-input , .lower-input{
+    border: none;
+    border: 1px solid rgb(15, 121, 12);
+    border-radius: 3px;
+    padding: 0 7px;
+    background: none;
+}
+.container .form-wrapper label {
+    color: rgb(30, 115, 185);
+}
+.container .form-wrapper .upload{
+    position: relative;
+    display: flex;
+    column-gap: 10px;
+}
+input[type="file"]{
+    opacity: 0;
+    position: absolute;
+    top:10px;
+}
+.container .form-wrapper .upload span {
+    color: rgb(30, 115, 185);
+}
+.container .form-wrapper .upload  label{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: rgb(234, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 3px;
+    border-style: dashed;
+    color: black;
+}
+.container .form-wrapper .upload .pic-info  {
+    font-size: 14px;
+    margin-top: 20px ;
+}
+.container .form-wrapper .line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(128, 126, 126);
+    margin-bottom: 15px;
+}
+.container .form-wrapper .info{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-sum {
+    width: 100%;
+}
+.btn-sum input{
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(15, 64, 104);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (max-width:600px){
+    .container{
+        padding: 0 0;
+    }
+    .container .form-wrapper{
+        padding: 0 20px;
+    }
+    .container .form-wrapper .upper-div{
+        flex-direction: column;
+    }
+    .container .form-wrapper .upper-div div{
+        width: 100%;
+    }
+    .container .form-wrapper .upload{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .container .form-wrapper .upload .pic-info  {
+        font-size: 14px;
+        margin-top: 0;
+
+    }
+}

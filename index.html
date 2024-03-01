@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="" onsubmit="stopresrt()">
+                <div class="upper-div">
+                    <div>
+                        <label for="stdCountry">Select Country</label><br>
+                        <select name="country" id="stdCountry" class="upper-input" required>
+                            <option value hidden>Selct Country</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="India">India</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="stdCourse">Select Course</label><br>
+                        <select name="cousre" id="stdCourse" class="upper-input" required>
+                            <option value hidden>Selct Course</option>
+                            <option value="appDev">Web dev</option>
+                            <option value="webdev">App Dev</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="stdName">Full name</label><br>
+                        <input type="text" id="stdName" placeholder="Full Name" class="upper-input" required>
+                    </div>
+                    <div>
+                        <label for="stdFathername">Father name</label><br>
+                        <input type="text" id="stdFathername" placeholder="Father Name" class="upper-input" required>
+                    </div>
+                    <div>
+                        <label for="stdEmail">Email</label><br>
+                        <input type="email" id="stdEmail" placeholder="Email" class="upper-input" required>
+                    </div>
+                    <div>
+                        <label for="stdPhone">PHONE</label><br>
+                        <input type="number" id="stdPhone" placeholder="Phone" class="upper-input" required>
+                    </div>
+                    <div>
+                        <label for="stdCnic">CNIC</label><br>
+                        <input type="number" id="stdCnic" placeholder="CNIC" class="upper-input" required>
+                    </div>
+                    <div>
+                        <label for="stdFatherCnic">Fathers's CNIC</label><br>
+                        <input type="number" id="stdFatherCnic" placeholder="Fathers's CNIC" class="upper-input" required>
+                    </div>
+                    <div>
+                        <label for="stddob">Date of Birth</label><br>
+                        <input type="date" id="stddob" placeholder="dd/mm//yy" class="upper-input" required>
+                    </div>
+                    <div>
+                        <label for="stdGender">Select Gender</label><br>
+                        <select  id="stdGender" class="upper-input" class="upper-input" required>
+                            <option value="" hidden>Gender</option>
+                            <option>Male</option>
+                            <option >Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="lower-div">
+                    <div>
+                        <label for="stdAddrs">Address</label><br>
+                        <input type="text" id="stdAddrs" placeholder="Addres" class="lower-input" required>
+                    </div>
+                    <div>
+                        <label for="stdQulifi">Last Qualifications </label><br>
+                        <input type="text" id="stdQulifi" placeholder="Last Qulfication" class="lower-input" required>
+                    </div>
+                    <div>
+                        <label for="stdlaptop">Do you have laptop</label><br>
+                        <select  id="stdlaptop" class="lower-input" required>
+                            <option value hidden>Do you have laptop?</option>
+                            <option value="yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="upload">
+                    <div>
+                        <span>Picture</span><br>
+                        <label for="stdPiture">+ Upload</label><br>
+                        <input type="file"id="stdPiture" name="pic" required >
+                    </div>
+                    <div class="pic-info">
+                        <p>With white or blue background</p>
+                        <p>File size must be less than 1MB</p>
+                        <p>File type: jpg, jpeg, png</p>
+                        <p>Upload your recent passport size picture</p>
+                        <p>Your Face should be clearly visible without any Glasses</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="info">
+                    <ol>
+                        <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
+                        <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</li>
+                        <li>Defiance will render my admission canceled at any point in time.</li>
+                        <li>Upon completion, of the course, I will complete the required project by SWIT.</li>
+                        <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+                    </ol>
+                </div>
+                <div class="btn-sum">
+                    <input type="submit" onclick="sendData()">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script type="module" src="./app.js">
+    </script>
+</body>
+</html>
